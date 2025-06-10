@@ -2,91 +2,85 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="700"
+        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="300"
         x:Class="Elbrus.AddClient"
         x:CompileBindings="False"
-        Title="Äîáàâëåíèå êëèåíòà"
+        Title="Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°"
         FontFamily="Arial"
         SizeToContent="WidthAndHeight">
-    <Grid Margin="20" ColumnDefinitions="Auto,*,Auto" RowDefinitions="Auto,Auto,Auto">
-   
-        <TextBlock Grid.ColumnSpan="3" Text="Äîáàâëåíèå íîâîãî êëèåíòà" 
-                   FontSize="18" FontWeight="Bold" 
+	<Grid Margin="20" ColumnDefinitions="Auto,*,Auto" RowDefinitions="Auto,Auto,Auto">
+
+		<TextBlock Grid.ColumnSpan="3" Text="Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð½Ð¾Ð²Ð¾Ð³Ð¾ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°"
+                   FontSize="18" FontWeight="Bold"
                    HorizontalAlignment="Center" Margin="0,0,0,20"/>
-        
-     
-        <ScrollViewer Grid.Row="1" Grid.ColumnSpan="3" VerticalScrollBarVisibility="Auto">
-            <StackPanel Spacing="10" Width="400">
-         
-                <StackPanel>
-                    <TextBlock Text="Êîä êëèåíòà (8 öèôð):" Margin="0,0,0,2"/>
-                    <TextBox x:Name="CodeBox" Watermark="Ââåäèòå 8-çíà÷íûé êîä" 
+
+
+		<ScrollViewer Grid.Row="1" Grid.ColumnSpan="3" VerticalScrollBarVisibility="Auto">
+			<StackPanel Spacing="10" Width="400">
+
+				<StackPanel>
+					<TextBlock Text="ÐšÐ¾Ð´ ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð° (8 Ñ†Ð¸Ñ„Ñ€):" Margin="0,0,0,2"/>
+					<TextBox x:Name="CodeBox" Watermark="Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 8-Ð·Ð½Ð°Ñ‡Ð½Ñ‹Ð¹ ÐºÐ¾Ð´"
                              UseFloatingWatermark="True"/>
-                </StackPanel>
-                
-           
-                <StackPanel>
-                    <TextBlock Text="Email:" Margin="0,0,0,2"/>
-                    <TextBox x:Name="EmailBox" Watermark="example@domain.com" 
+				</StackPanel>
+				<StackPanel>
+					<TextBlock Text="Email:" Margin="0,0,0,2"/>
+					<TextBox x:Name="EmailBox" Watermark="example@domain.com"
                              UseFloatingWatermark="True"/>
-                </StackPanel>
-                
-           
-                <StackPanel>
-                    <TextBlock Text="ÔÈÎ êëèåíòà:" Margin="0,0,0,2"/>
-                    <TextBox x:Name="FioBox" Watermark="Èâàíîâ Èâàí Èâàíîâè÷" 
+				</StackPanel>
+				<StackPanel>
+					<TextBlock Text="Ð¤Ð˜Ðž ÐºÐ»Ð¸ÐµÐ½Ñ‚Ð°:" Margin="0,0,0,2"/>
+					<TextBox x:Name="FioBox" Watermark="Ð˜Ð²Ð°Ð½Ð¾Ð² Ð˜Ð²Ð°Ð½ Ð˜Ð²Ð°Ð½Ð¾Ð²Ð¸Ñ‡"
                              UseFloatingWatermark="True"/>
-                </StackPanel>
-                
-           
-                <StackPanel>
-                    <TextBlock Text="Àäðåñ:" Margin="0,0,0,2"/>
-                    <TextBox x:Name="AddressBox" Watermark="ã. Ìîñêâà, óë. Ïðèìåðíàÿ, ä.1" 
+				</StackPanel>
+				<StackPanel>
+					<TextBlock Text="ÐÐ´Ñ€ÐµÑ:" Margin="0,0,0,2"/>
+					<TextBox x:Name="AddressBox" Watermark="Ð³. ÐœÐ¾ÑÐºÐ²Ð°, ÑƒÐ». ÐŸÑ€Ð¸Ð¼ÐµÑ€Ð½Ð°Ñ, Ð´.1"
                              UseFloatingWatermark="True"/>
-                </StackPanel>
-                
-              
-                <StackPanel>
-                    <TextBlock Text="Äàòà ðîæäåíèÿ:" Margin="0,0,0,2"/>
-                    <TextBox x:Name="BirthdayBox" Watermark="ää.ìì.ãããã" 
+				</StackPanel>
+
+
+				<StackPanel>
+					<TextBlock Text="Ð”Ð°Ñ‚Ð° Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ:" Margin="0,0,0,2"/>
+					<TextBox x:Name="BirthdayBox" Watermark="Ð´Ð´.Ð¼Ð¼.Ð³Ð³Ð³Ð³"
                              UseFloatingWatermark="True"/>
-                </StackPanel>
-                
-            
-                <StackPanel>
-                    <TextBlock Text="Ñåðèÿ è íîìåð ïàñïîðòà (10 öèôð):" Margin="0,0,0,2"/>
-                    <TextBox x:Name="PassportBox" Watermark="1234567890" 
+				</StackPanel>
+
+
+				<StackPanel>
+					<TextBlock Text="Ð¡ÐµÑ€Ð¸Ñ Ð¸ Ð½Ð¾Ð¼ÐµÑ€ Ð¿Ð°ÑÐ¿Ð¾Ñ€Ñ‚Ð° (10 Ñ†Ð¸Ñ„Ñ€):" Margin="0,0,0,2"/>
+					<TextBox x:Name="PassportBox" Watermark="1234567890"
                              UseFloatingWatermark="True"/>
-                </StackPanel>
-                
-           
-                <StackPanel>
-                    <TextBlock Text="Òåëåôîí (11 öèôð):" Margin="0,0,0,2"/>
-                    <TextBox x:Name="PhoneBox" Watermark="79212576390" 
+				</StackPanel>
+
+
+				<StackPanel>
+					<TextBlock Text="Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½ (11 Ñ†Ð¸Ñ„Ñ€):" Margin="0,0,0,2"/>
+					<TextBox x:Name="PhoneBox" Watermark="79212576390"
                              UseFloatingWatermark="True"/>
-                </StackPanel>
-                
-              
-                <StackPanel>
-                    <TextBlock Text="Ïàðîëü:" Margin="0,0,0,2"/>
-                    <TextBox x:Name="PasswordBox" PasswordChar="•" 
-                             Watermark="Ââåäèòå ïàðîëü" UseFloatingWatermark="True"/>
-                </StackPanel>
-                
-                
-                <Border x:Name="MessageBorder" Background="#F0F0F0" CornerRadius="4" 
+				</StackPanel>
+
+
+				<StackPanel>
+					<TextBlock Text="ÐŸÐ°Ñ€Ð¾Ð»ÑŒ:" Margin="0,0,0,2"/>
+					<TextBox x:Name="PasswordBox" PasswordChar="â€¢"
+                             Watermark="Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ" UseFloatingWatermark="True"/>
+				</StackPanel>
+
+
+				<Border x:Name="MessageBorder" Background="#F0F0F0" CornerRadius="4"
                         Padding="10" Margin="0,15,0,0" IsVisible="False">
-                    <TextBlock x:Name="MessageText" TextWrapping="Wrap"/>
-                </Border>
-            </StackPanel>
-        </ScrollViewer>
-        
-       
-        <StackPanel Grid.Row="2" Grid.ColumnSpan="3" Orientation="Horizontal" 
+					<TextBlock x:Name="MessageText" TextWrapping="Wrap"/>
+				</Border>
+			</StackPanel>
+		</ScrollViewer>
+
+
+		<StackPanel Grid.Row="2" Grid.ColumnSpan="3" Orientation="Horizontal"
                     HorizontalAlignment="Right" Spacing="10" Margin="0,20,0,0">
-            <Button Content="Íàçàä" Width="120" Click="BackOnOrder"/>
-            <Button Content="Äîáàâèòü" Width="120" Click="AddClient_OnClick" 
+			<Button Content="ÐÐ°Ð·Ð°Ð´" Width="120" Click="BackOnOrder"/>
+			<Button Content="Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ" Width="120" Click="AddClient_OnClick"
                     Classes="Primary"/>
-        </StackPanel>
-    </Grid>
+		</StackPanel>
+	</Grid>
 </Window>

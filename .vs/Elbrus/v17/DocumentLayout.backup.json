@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|c:\\users\\user\\desktop\\kursovayaelbrus\\elbrus\\addclient.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|solutionrelative:elbrus\\addclient.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|c:\\users\\user\\desktop\\kursovayaelbrus\\elbrus\\userdashboardwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|solutionrelative:elbrus\\userdashboardwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|c:\\users\\user\\desktop\\kursovayaelbrus\\elbrus\\userdashboardwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|solutionrelative:elbrus\\userdashboardwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddClient.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\AddClient.axaml",
+              "RelativeDocumentMoniker": "Elbrus\\AddClient.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\AddClient.axaml",
+              "RelativeToolTip": "Elbrus\\AddClient.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-10T11:00:29.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserDashboardWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\UserDashboardWindow.axaml",
+              "RelativeDocumentMoniker": "Elbrus\\UserDashboardWindow.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\UserDashboardWindow.axaml",
+              "RelativeToolTip": "Elbrus\\UserDashboardWindow.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-10T10:46:43.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserDashboardWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\UserDashboardWindow.axaml.cs",
+              "RelativeDocumentMoniker": "Elbrus\\UserDashboardWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\UserDashboardWindow.axaml.cs",
+              "RelativeToolTip": "Elbrus\\UserDashboardWindow.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T10:37:02.775Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
