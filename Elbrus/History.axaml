@@ -1,0 +1,43 @@
+<!-- HistoryWindow.xaml -->
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Elbrus.History"
+        x:CompileBindings="False"
+        Title="История входов"
+        Width="700" Height="500">
+    <StackPanel Margin="10" Spacing="10">
+
+     
+        <StackPanel Orientation="Horizontal" Spacing="10">
+            <ComboBox x:Name="UserFilter" Width="120" PlaceholderText="Все"/>
+            <ComboBox x:Name="SortFilter" Width="120" SelectedIndex="0">
+                <ComboBoxItem>Новые</ComboBoxItem>
+                <ComboBoxItem>Старые</ComboBoxItem>
+            </ComboBox>
+            <ComboBox x:Name="StatusFilter" Width="120" SelectedIndex="0">
+                <ComboBoxItem>Все</ComboBoxItem>
+                <ComboBoxItem>Успешные</ComboBoxItem>
+                <ComboBoxItem>Неуспешные</ComboBoxItem>
+            </ComboBox>
+            <Button x:Name="ResetBtn" Content="Сброс" />
+        </StackPanel>
+
+
+        <ListBox x:Name="HistoryList" Height="350">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5">
+                        <TextBlock Text="{Binding LastEnter, StringFormat=dd.MM.yyyy HH:mm}"
+                                   FontWeight="Bold"/>
+                        <TextBlock>
+                            <Run Text="{Binding Login}"/>
+                            <Run Text=" — "/>
+                            <Run Text="{Binding EnterStatus}"/>
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+    </StackPanel>
+</Window>

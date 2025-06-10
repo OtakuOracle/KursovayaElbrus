@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Elbrus.MainWindow"
+        x:CompileBindings="True"
+        Title="Elbrus">
+	<DockPanel>
+		<StackPanel HorizontalAlignment="Center" Orientation="Horizontal" DockPanel.Dock="Top">
+			<TextBlock Text="Точки проката горнолыжного комплекса «Приэльбрусье»"/>
+		</StackPanel>
+		<StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="5">
+			<TextBlock Text="Введите логин" HorizontalAlignment="Center" Margin="5"/>
+			<TextBox  x:Name="LoginBox" Margin="5" Width="200"/>
+			<TextBlock Text="Введите пароль" HorizontalAlignment="Center" Margin="5"/>
+			<TextBox  x:Name="PasswordBox" Margin="5" Width="200" PasswordChar="*"/>
+			<TextBlock Text="" x:Name="ErrorBlock" HorizontalAlignment="Center" Margin="5"/>
+			<Button x:Name="ForPassword" Content="Показать пароль" Margin="5" Click="TogglePasswordVisibility" HorizontalAlignment="Center"/>
+			<Button x:Name="Authorize" Content="Авторизироваться" Margin="5" Click="AuthorizeButton" HorizontalAlignment="Center"/>
+		</StackPanel>
+
+	</DockPanel>
+</Window>

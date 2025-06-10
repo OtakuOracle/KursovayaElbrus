@@ -1,0 +1,19 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Elbrus.OrderBarcode"
+        Title="Генерация штрих-кода заказа" Width="400" Height="350">
+    <StackPanel Margin="20" Spacing="15" HorizontalAlignment="Center">
+        <TextBlock Text="Генерация штрих-кода заказа" FontSize="16" FontWeight="Bold"/>
+        
+        <Border BorderBrush="Black" BorderThickness="1" Padding="15" CornerRadius="5">
+            <Canvas x:Name="BarcodeImageCanvas" Width="100" Height="100"/>
+        </Border>
+        
+        <TextBlock x:Name="BarcodeValueTextBlock" FontFamily="Courier New" FontSize="14" TextAlignment="Center"/>
+        
+        <StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Center">
+            <Button Content="Печать" Click="OnPrintButtonClick" Width="100"/>
+            <Button Content="Закрыть" Click="OnCloseButtonClick" Width="100"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

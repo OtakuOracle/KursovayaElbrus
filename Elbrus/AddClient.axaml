@@ -1,0 +1,92 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="700"
+        x:Class="Elbrus.AddClient"
+        x:CompileBindings="False"
+        Title="Добавление клиента"
+        FontFamily="Arial"
+        SizeToContent="WidthAndHeight">
+    <Grid Margin="20" ColumnDefinitions="Auto,*,Auto" RowDefinitions="Auto,Auto,Auto">
+   
+        <TextBlock Grid.ColumnSpan="3" Text="Добавление нового клиента" 
+                   FontSize="18" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
+        
+     
+        <ScrollViewer Grid.Row="1" Grid.ColumnSpan="3" VerticalScrollBarVisibility="Auto">
+            <StackPanel Spacing="10" Width="400">
+         
+                <StackPanel>
+                    <TextBlock Text="Код клиента (8 цифр):" Margin="0,0,0,2"/>
+                    <TextBox x:Name="CodeBox" Watermark="Введите 8-значный код" 
+                             UseFloatingWatermark="True"/>
+                </StackPanel>
+                
+           
+                <StackPanel>
+                    <TextBlock Text="Email:" Margin="0,0,0,2"/>
+                    <TextBox x:Name="EmailBox" Watermark="example@domain.com" 
+                             UseFloatingWatermark="True"/>
+                </StackPanel>
+                
+           
+                <StackPanel>
+                    <TextBlock Text="ФИО клиента:" Margin="0,0,0,2"/>
+                    <TextBox x:Name="FioBox" Watermark="Иванов Иван Иванович" 
+                             UseFloatingWatermark="True"/>
+                </StackPanel>
+                
+           
+                <StackPanel>
+                    <TextBlock Text="Адрес:" Margin="0,0,0,2"/>
+                    <TextBox x:Name="AddressBox" Watermark="г. Москва, ул. Примерная, д.1" 
+                             UseFloatingWatermark="True"/>
+                </StackPanel>
+                
+              
+                <StackPanel>
+                    <TextBlock Text="Дата рождения:" Margin="0,0,0,2"/>
+                    <TextBox x:Name="BirthdayBox" Watermark="дд.мм.гггг" 
+                             UseFloatingWatermark="True"/>
+                </StackPanel>
+                
+            
+                <StackPanel>
+                    <TextBlock Text="Серия и номер паспорта (10 цифр):" Margin="0,0,0,2"/>
+                    <TextBox x:Name="PassportBox" Watermark="1234567890" 
+                             UseFloatingWatermark="True"/>
+                </StackPanel>
+                
+           
+                <StackPanel>
+                    <TextBlock Text="Телефон (11 цифр):" Margin="0,0,0,2"/>
+                    <TextBox x:Name="PhoneBox" Watermark="79212576390" 
+                             UseFloatingWatermark="True"/>
+                </StackPanel>
+                
+              
+                <StackPanel>
+                    <TextBlock Text="Пароль:" Margin="0,0,0,2"/>
+                    <TextBox x:Name="PasswordBox" PasswordChar="•" 
+                             Watermark="Введите пароль" UseFloatingWatermark="True"/>
+                </StackPanel>
+                
+                
+                <Border x:Name="MessageBorder" Background="#F0F0F0" CornerRadius="4" 
+                        Padding="10" Margin="0,15,0,0" IsVisible="False">
+                    <TextBlock x:Name="MessageText" TextWrapping="Wrap"/>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+        
+       
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="3" Orientation="Horizontal" 
+                    HorizontalAlignment="Right" Spacing="10" Margin="0,20,0,0">
+            <Button Content="Назад" Width="120" Click="BackOnOrder"/>
+            <Button Content="Добавить" Width="120" Click="AddClient_OnClick" 
+                    Classes="Primary"/>
+        </StackPanel>
+    </Grid>
+</Window>
