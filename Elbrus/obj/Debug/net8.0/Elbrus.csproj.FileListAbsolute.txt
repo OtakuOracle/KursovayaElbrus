@@ -185,15 +185,7 @@ C:\Users\User\Desktop\Elbrus\Elbrus\bin\Debug\net8.0\emp\Федоров.png
 C:\Users\User\Desktop\Elbrus\Elbrus\bin\Debug\net8.0\emp\Хохлов.png
 C:\Users\User\Desktop\Elbrus\Elbrus\bin\Debug\net8.0\emp\Ширяев.jpeg
 C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\Elbrus.exe
-C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Беляева.png
 C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Иванов.jpeg
-C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Игнатов.png
-C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Миронов.png
-C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Петров.png
-C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Смирнова.png
-C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Стрелков.png
-C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Федоров.png
-C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Хохлов.png
 C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Ширяев.jpeg
 C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\Elbrus.deps.json
 C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\Elbrus.runtimeconfig.json
@@ -371,3 +363,11 @@ C:\Users\User\Desktop\KursovayaElbrus\Elbrus\obj\Debug\net8.0\refint\Avalonia\El
 C:\Users\User\Desktop\KursovayaElbrus\Elbrus\obj\Debug\net8.0\Elbrus.csproj.Up2Date
 C:\Users\User\Desktop\KursovayaElbrus\Elbrus\obj\Debug\net8.0\Elbrus.genruntimeconfig.cache
 C:\Users\User\Desktop\KursovayaElbrus\Elbrus\obj\Debug\net8.0\ref\Elbrus.dll
+C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Беляева.jpeg
+C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Игнатов.jpeg
+C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Миронов.jpeg
+C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Петров.jpeg
+C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Смирнова.jpeg
+C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Стрелков.jpeg
+C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Федоров.jpeg
+C:\Users\User\Desktop\KursovayaElbrus\Elbrus\bin\Debug\net8.0\emp\Хохлов.jpeg

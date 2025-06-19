@@ -2,7 +2,6 @@
 using System.Linq;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
-using Avalonia.Media;
 using Elbrus.Models;
 
 namespace Elbrus;
@@ -26,7 +25,7 @@ public partial class AddClient : Window
             string.IsNullOrWhiteSpace(PassportBox.Text) ||
             string.IsNullOrWhiteSpace(PasswordBox.Text))
         {
-            ShowMessage("Пожалуйста, заполните все поля!", false);
+            UserNotAdd.Text = "Пожалуйста, заполните все поля!";
             return;
         }
 
@@ -34,15 +33,17 @@ public partial class AddClient : Window
         {
             CorrectInput();
 
+
             var clientCode = Convert.ToInt32(CodeBox.Text);
             if (context.Clients.Any(c => c.ClientCode == clientCode))
             {
-                ShowMessage("Клиент с таким кодом уже существует!", false);
+                UserNotAdd.Text = "Клиент с таким кодом уже существует!";
                 return;
             }
 
             var NewClient = new Client
             {
+
                 Fio = FioBox.Text.Trim(),
                 ClientCode = clientCode,
                 Passport = PassportBox.Text.Trim(),
@@ -50,28 +51,19 @@ public partial class AddClient : Window
                 Address = AddressBox.Text.Trim(),
                 Email = EmailBox.Text.Trim(),
                 Password = PasswordBox.Text,
-                Role = 1
+                Role = 4
             };
 
             context.Clients.Add(NewClient);
             context.SaveChanges();
 
-            ShowMessage("Клиент успешно добавлен!", true);
+            UserAdd.Text = "Клиент успешно добавлен!";
             ClearFields();
         }
         catch (Exception ex)
         {
-            ShowMessage($"Ошибка: {ex.Message}", false);
+            UserNotAdd.Text = $"Ошибка: {ex.Message}";
         }
-    }
-
-    private void ShowMessage(string text, bool isSuccess)
-    {
-        MessageBorder.IsVisible = true;
-        MessageText.Text = text;
-        MessageBorder.Background = isSuccess
-            ? new SolidColorBrush(Color.FromRgb(220, 255, 220))
-            : new SolidColorBrush(Color.FromRgb(255, 220, 220));
     }
 
     private void ClearFields()
@@ -84,7 +76,6 @@ public partial class AddClient : Window
         EmailBox.Text = "";
         PasswordBox.Text = "";
         PhoneBox.Text = "";
-        MessageBorder.IsVisible = false;
     }
 
     private void CorrectInput()
@@ -119,4 +110,6 @@ public partial class AddClient : Window
     {
         new SallerWindow().ShowDialog(this);
     }
+
+
 }

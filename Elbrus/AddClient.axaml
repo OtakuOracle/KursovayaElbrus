@@ -2,85 +2,35 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="300"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Elbrus.AddClient"
         x:CompileBindings="False"
-        Title="Добавление клиента"
-        FontFamily="Arial"
-        SizeToContent="WidthAndHeight">
-	<Grid Margin="20" ColumnDefinitions="Auto,*,Auto" RowDefinitions="Auto,Auto,Auto">
-
-		<TextBlock Grid.ColumnSpan="3" Text="Добавление нового клиента"
-                   FontSize="18" FontWeight="Bold"
-                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
-
-
-		<ScrollViewer Grid.Row="1" Grid.ColumnSpan="3" VerticalScrollBarVisibility="Auto">
-			<StackPanel Spacing="10" Width="400">
-
-				<StackPanel>
-					<TextBlock Text="Код клиента (8 цифр):" Margin="0,0,0,2"/>
-					<TextBox x:Name="CodeBox" Watermark="Введите 8-значный код"
-                             UseFloatingWatermark="True"/>
-				</StackPanel>
-				<StackPanel>
-					<TextBlock Text="Email:" Margin="0,0,0,2"/>
-					<TextBox x:Name="EmailBox" Watermark="example@domain.com"
-                             UseFloatingWatermark="True"/>
-				</StackPanel>
-				<StackPanel>
-					<TextBlock Text="ФИО клиента:" Margin="0,0,0,2"/>
-					<TextBox x:Name="FioBox" Watermark="Иванов Иван Иванович"
-                             UseFloatingWatermark="True"/>
-				</StackPanel>
-				<StackPanel>
-					<TextBlock Text="Адрес:" Margin="0,0,0,2"/>
-					<TextBox x:Name="AddressBox" Watermark="г. Москва, ул. Примерная, д.1"
-                             UseFloatingWatermark="True"/>
-				</StackPanel>
-
-
-				<StackPanel>
-					<TextBlock Text="Дата рождения:" Margin="0,0,0,2"/>
-					<TextBox x:Name="BirthdayBox" Watermark="дд.мм.гггг"
-                             UseFloatingWatermark="True"/>
-				</StackPanel>
-
-
-				<StackPanel>
-					<TextBlock Text="Серия и номер паспорта (10 цифр):" Margin="0,0,0,2"/>
-					<TextBox x:Name="PassportBox" Watermark="1234567890"
-                             UseFloatingWatermark="True"/>
-				</StackPanel>
-
-
-				<StackPanel>
-					<TextBlock Text="Телефон (11 цифр):" Margin="0,0,0,2"/>
-					<TextBox x:Name="PhoneBox" Watermark="79212576390"
-                             UseFloatingWatermark="True"/>
-				</StackPanel>
-
-
-				<StackPanel>
-					<TextBlock Text="Пароль:" Margin="0,0,0,2"/>
-					<TextBox x:Name="PasswordBox" PasswordChar="•"
-                             Watermark="Введите пароль" UseFloatingWatermark="True"/>
-				</StackPanel>
-
-
-				<Border x:Name="MessageBorder" Background="#F0F0F0" CornerRadius="4"
-                        Padding="10" Margin="0,15,0,0" IsVisible="False">
-					<TextBlock x:Name="MessageText" TextWrapping="Wrap"/>
-				</Border>
-			</StackPanel>
-		</ScrollViewer>
-
-
-		<StackPanel Grid.Row="2" Grid.ColumnSpan="3" Orientation="Horizontal"
-                    HorizontalAlignment="Right" Spacing="10" Margin="0,20,0,0">
-			<Button Content="Назад" Width="120" Click="BackOnOrder"/>
-			<Button Content="Добавить" Width="120" Click="AddClient_OnClick"
-                    Classes="Primary"/>
+        Title="AddClient">
+	<DockPanel>
+		<StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Center">
+			<TextBlock Text="Добавить клиента" HorizontalAlignment="Center"/>
 		</StackPanel>
-	</Grid>
+		<StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="5">
+			<TextBlock Text="Введите код клиента" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="CodeBox" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBlock Text="Введите email" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="EmailBox" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBlock Text="Введите ФИО клиента" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="FioBox" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBlock Text="Введите адрес" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="AddressBox" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBlock Text="Введите дату рождения" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="BirthdayBox" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBlock Text="Введите серию и номер паспорта (слитно)" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="PassportBox" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBlock Text="Введите телефон" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="PhoneBox" Watermark="79212576390" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBlock Text="Введите пароль" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<TextBox x:Name="PasswordBox" VerticalAlignment="Center" Margin="5" Width="200"/>
+			<Button Content="Добавить пользователя" HorizontalAlignment="Center" Margin="5" Width="200" Click="AddClient_OnClick"/>
+			<Button Content="Назад" HorizontalAlignment="Center" Margin="5" Width="200" Click="BackOnOrder"/>
+			<TextBlock Text="" x:Name="UserAdd" VerticalAlignment="Center" Margin="200" Width="200"/>
+			<TextBlock Text="" x:Name="UserNotAdd" VerticalAlignment="Center" Margin="200" Width="200"/>
+		</StackPanel>
+	</DockPanel>
 </Window>

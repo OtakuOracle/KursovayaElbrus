@@ -1,43 +1,63 @@
-<!-- HistoryWindow.xaml -->
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        x:Class="Elbrus.History"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Elbrus"
+        mc:Ignorable="d"
+        Width="700" Height="500"
         x:CompileBindings="False"
-        Title="История входов"
-        Width="700" Height="500">
-    <StackPanel Margin="10" Spacing="10">
+        x:Class="Elbrus.History"
+        Title="История входов">
 
-     
-        <StackPanel Orientation="Horizontal" Spacing="10">
-            <ComboBox x:Name="UserFilter" Width="120" PlaceholderText="Все"/>
-            <ComboBox x:Name="SortFilter" Width="120" SelectedIndex="0">
-                <ComboBoxItem>Новые</ComboBoxItem>
-                <ComboBoxItem>Старые</ComboBoxItem>
-            </ComboBox>
-            <ComboBox x:Name="StatusFilter" Width="120" SelectedIndex="0">
-                <ComboBoxItem>Все</ComboBoxItem>
-                <ComboBoxItem>Успешные</ComboBoxItem>
-                <ComboBoxItem>Неуспешные</ComboBoxItem>
-            </ComboBox>
-            <Button x:Name="ResetBtn" Content="Сброс" />
-        </StackPanel>
+	<StackPanel Margin="10" Spacing="10">
+
+		<StackPanel Orientation="Horizontal" Spacing="10">
+			<ComboBox x:Name="LoginComboBox"
+                      Width="150"
+                      PlaceholderText="Все пользователи"/>
+
+			<ComboBox x:Name="SortComboBox"
+                      Width="150"
+                      SelectedIndex="0">
+				<ComboBoxItem>Сначала новые</ComboBoxItem>
+				<ComboBoxItem>Сначала старые</ComboBoxItem>
+			</ComboBox>
+
+			<ComboBox x:Name="StatusComboBox"
+                      Width="150"
+                      SelectedIndex="0">
+				<ComboBoxItem>Все статусы</ComboBoxItem>
+				<ComboBoxItem>Успешно</ComboBoxItem>
+				<ComboBoxItem>Неуспешно</ComboBoxItem>
+			</ComboBox>
+
+			<Button Content="Сбросить"
+                    x:Name="ResetButton"/>
+		</StackPanel>
 
 
-        <ListBox x:Name="HistoryList" Height="350">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Margin="5">
-                        <TextBlock Text="{Binding LastEnter, StringFormat=dd.MM.yyyy HH:mm}"
+		<ListBox x:Name="LastEnterBox" Height="350">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<StackPanel Margin="5" Spacing="3">
+						<TextBlock Text="{Binding LastEnter, StringFormat='{}{0:dd.MM.yyyy HH:mm}'}"
                                    FontWeight="Bold"/>
-                        <TextBlock>
-                            <Run Text="{Binding Login}"/>
-                            <Run Text=" — "/>
-                            <Run Text="{Binding EnterStatus}"/>
-                        </TextBlock>
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+						<StackPanel Orientation="Horizontal" Spacing="10">
+							<TextBlock Text="{Binding Login}"/>
+							<TextBlock Text="{Binding EnterStatus}"
+                                       Foreground="{Binding EnterStatus, Converter={x:Static local:StatusToColorConverter.Instance}}"/>
+						</StackPanel>
+					</StackPanel>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
 
-    </StackPanel>
+
+		<TextBlock>
+			<Run Text=" Успешных:"/>
+			<Run Text="{Binding SuccessfulLoginsCount}"/>
+			<Run Text=" Неуспешных:"/>
+			<Run Text="{Binding FailedLoginsCount}"/>
+		</TextBlock>
+	</StackPanel>
 </Window>

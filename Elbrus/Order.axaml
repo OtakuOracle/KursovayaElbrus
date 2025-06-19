@@ -2,52 +2,29 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" 
-        Width="600" Height="500"
-        x:Class="Elbrus.OrderDetailsWindow"
-        Title="Äåòàëè çàêàçà"
-        FontFamily="Arial">
-    
-    <Grid Margin="20" RowDefinitions="Auto,Auto,*,Auto" ColumnDefinitions="*">
-        <TextBlock Grid.Row="0" Text="Èíôîðìàöèÿ î çàêàçå" 
-                   FontSize="18" FontWeight="Bold"
-                   HorizontalAlignment="Center" Margin="0,0,0,15"/>
-        
-        <Border Grid.Row="1" Background="#FFF0F0" CornerRadius="5" Padding="10"
-                HorizontalAlignment="Stretch" Margin="0,0,0,15">
-            <TextBlock x:Name="StatusText" FontWeight="Bold" 
-                       HorizontalAlignment="Center" Foreground="#D32F2F"/>
-        </Border>
+        mc:Ignorable="d"
+        Width="500" Height="400"
+        x:Class="Elbrus.Order"
+        Title="Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð·Ð°ÐºÐ°Ð·Ðµ">
+	<StackPanel Margin="10" Spacing="10">
+		<TextBlock Text="Ð”ÐµÑ‚Ð°Ð»Ð¸ Ð·Ð°ÐºÐ°Ð·Ð°" FontSize="16" HorizontalAlignment="Center"/>
+		<TextBlock x:Name="StatusText" Foreground="Red"/>
 
-        <Border Grid.Row="2" BorderBrush="#E0E0E0" BorderThickness="1" 
-                CornerRadius="5" Padding="15">
-            <Grid ColumnDefinitions="150,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto,*">
-                <TextBlock Text="Íîìåð çàêàçà:" FontWeight="SemiBold"/>
-                <TextBlock x:Name="OrderNumber" Grid.Column="1"/>
-                
-                <TextBlock Text="Êëèåíò:" Grid.Row="1" FontWeight="SemiBold"/>
-                <TextBlock x:Name="ClientName" Grid.Column="1" Grid.Row="1"/>
-                
-                <TextBlock Text="Äàòà è âðåìÿ:" Grid.Row="2" FontWeight="SemiBold"/>
-                <TextBlock x:Name="OrderDate" Grid.Column="1" Grid.Row="2"/>
-                
-                <TextBlock Text="Óñëóãè:" Grid.Row="3" FontWeight="SemiBold"/>
-                <ScrollViewer Grid.Column="1" Grid.Row="3" MaxHeight="150">
-                    <ItemsControl x:Name="ServicesList"/>
-                </ScrollViewer>
-                
-                <TextBlock Text="Îáùàÿ ñòîèìîñòü:" Grid.Row="4" FontWeight="SemiBold"/>
-                <TextBlock x:Name="TotalCost" Grid.Column="1" Grid.Row="4" FontSize="16"/>
-            </Grid>
-        </Border>
-        
+		<Grid ColumnDefinitions="120,*" RowDefinitions="Auto,Auto,Auto,Auto">
+			<TextBlock Text="ÐÐ¾Ð¼ÐµÑ€ Ð·Ð°ÐºÐ°Ð·Ð°:"/>
+			<TextBlock x:Name="OrderNumber" Grid.Column="1"/>
 
-        <StackPanel Grid.Row="3" Orientation="Horizontal" 
-                    HorizontalAlignment="Right" Spacing="10" Margin="0,15,0,0">
-            <Button Content="Ïå÷àòü øòðèõ-êîäà" Click="PrintBarcode_Click" 
-                    Width="150" Height="35" Classes="Primary"/>
-            <Button Content="Çàêðûòü" Click="Close_Click" 
-                    Width="150" Height="35"/>
-        </StackPanel>
-    </Grid>
+			<TextBlock Text="ÐšÐ»Ð¸ÐµÐ½Ñ‚:" Grid.Row="1"/>
+			<TextBlock x:Name="ClientName" Grid.Column="1" Grid.Row="1"/>
+
+			<TextBlock Text="Ð”Ð°Ñ‚Ð°/Ð²Ñ€ÐµÐ¼Ñ:" Grid.Row="2"/>
+			<TextBlock x:Name="OrderDate" Grid.Column="1" Grid.Row="2"/>
+
+			<TextBlock Text="Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ:" Grid.Row="3"/>
+			<TextBlock x:Name="TotalCost" Grid.Column="1" Grid.Row="3"/>
+		</Grid>
+
+		<Button Content="ÐŸÐµÑ‡Ð°Ñ‚ÑŒ ÑˆÑ‚Ñ€Ð¸Ñ…-ÐºÐ¾Ð´Ð°" Click="PrintBarcode_Click" Width="150"/>
+		<Button Content="Ð—Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ" Click="Close_Click" Width="150"/>
+	</StackPanel>
 </Window>

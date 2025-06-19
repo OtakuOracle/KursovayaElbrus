@@ -30,31 +30,31 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="emp\Беляева.png">
+    <None Update="emp\Беляева.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="emp\Иванов.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="emp\Игнатов.png">
+    <None Update="emp\Игнатов.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="emp\Миронов.png">
+    <None Update="emp\Миронов.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="emp\Петров.png">
+    <None Update="emp\Петров.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="emp\Смирнова.png">
+    <None Update="emp\Смирнова.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="emp\Стрелков.png">
+    <None Update="emp\Стрелков.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="emp\Федоров.png">
+    <None Update="emp\Федоров.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="emp\Хохлов.png">
+    <None Update="emp\Хохлов.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="emp\Ширяев.jpeg">

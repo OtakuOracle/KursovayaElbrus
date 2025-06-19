@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|c:\\users\\user\\desktop\\kursovayaelbrus\\elbrus\\addclient.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|solutionrelative:elbrus\\addclient.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|c:\\users\\user\\desktop\\kursovayaelbrus\\elbrus\\history.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|solutionrelative:elbrus\\history.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|c:\\users\\user\\desktop\\kursovayaelbrus\\elbrus\\history.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|solutionrelative:elbrus\\history.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|c:\\users\\user\\desktop\\kursovayaelbrus\\elbrus\\order.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|solutionrelative:elbrus\\order.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|c:\\users\\user\\desktop\\kursovayaelbrus\\elbrus\\userdashboardwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -13,6 +21,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|c:\\users\\user\\desktop\\kursovayaelbrus\\elbrus\\userdashboardwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|solutionrelative:elbrus\\userdashboardwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|c:\\users\\user\\desktop\\kursovayaelbrus\\elbrus\\order.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|solutionrelative:elbrus\\order.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|c:\\users\\user\\desktop\\kursovayaelbrus\\elbrus\\addclient.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|solutionrelative:elbrus\\addclient.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|c:\\users\\user\\desktop\\kursovayaelbrus\\elbrus\\addclient.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|solutionrelative:elbrus\\addclient.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|c:\\users\\user\\desktop\\kursovayaelbrus\\elbrus\\publish\\avalonia.freedesktop.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|solutionrelative:elbrus\\publish\\avalonia.freedesktop.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|c:\\users\\user\\desktop\\kursovayaelbrus\\elbrus\\orderbarcode.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4CF511B-903F-42CC-884F-EA6A940500EB}|Elbrus\\Elbrus.csproj|solutionrelative:elbrus\\orderbarcode.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +54,11 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
@@ -39,39 +67,126 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddClient.axaml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\AddClient.axaml",
-              "RelativeDocumentMoniker": "Elbrus\\AddClient.axaml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\AddClient.axaml",
-              "RelativeToolTip": "Elbrus\\AddClient.axaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Title": "History.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\History.axaml",
+              "RelativeDocumentMoniker": "Elbrus\\History.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\History.axaml",
+              "RelativeToolTip": "Elbrus\\History.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-10T11:00:29.827Z",
+              "WhenOpened": "2025-06-19T18:54:03.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "History.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\History.axaml.cs",
+              "RelativeDocumentMoniker": "Elbrus\\History.axaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\History.axaml.cs",
+              "RelativeToolTip": "Elbrus\\History.axaml.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAADwvwwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:23:32.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Order.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\Order.axaml.cs",
+              "RelativeDocumentMoniker": "Elbrus\\Order.axaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\Order.axaml.cs",
+              "RelativeToolTip": "Elbrus\\Order.axaml.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T17:09:51.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Order.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\Order.axaml",
+              "RelativeDocumentMoniker": "Elbrus\\Order.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\Order.axaml",
+              "RelativeToolTip": "Elbrus\\Order.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-19T17:06:35.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddClient.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\AddClient.axaml.cs",
+              "RelativeDocumentMoniker": "Elbrus\\AddClient.axaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\AddClient.axaml.cs",
+              "RelativeToolTip": "Elbrus\\AddClient.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T16:32:59.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Avalonia.FreeDesktop.dll",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\publish\\Avalonia.FreeDesktop.dll",
+              "RelativeDocumentMoniker": "Elbrus\\publish\\Avalonia.FreeDesktop.dll",
+              "ToolTip": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\publish\\Avalonia.FreeDesktop.dll",
+              "RelativeToolTip": "Elbrus\\publish\\Avalonia.FreeDesktop.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2025-06-18T19:18:41.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderBarcode.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\OrderBarcode.axaml.cs",
+              "RelativeDocumentMoniker": "Elbrus\\OrderBarcode.axaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\OrderBarcode.axaml.cs",
+              "RelativeToolTip": "Elbrus\\OrderBarcode.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T11:28:29.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddClient.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\AddClient.axaml",
+              "RelativeDocumentMoniker": "Elbrus\\AddClient.axaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\AddClient.axaml",
+              "RelativeToolTip": "Elbrus\\AddClient.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-10T11:00:29.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UserDashboardWindow.axaml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\UserDashboardWindow.axaml",
               "RelativeDocumentMoniker": "Elbrus\\UserDashboardWindow.axaml",
               "ToolTip": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\UserDashboardWindow.axaml",
               "RelativeToolTip": "Elbrus\\UserDashboardWindow.axaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-10T10:46:43.382Z"
+              "WhenOpened": "2025-06-10T10:46:43.382Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "UserDashboardWindow.axaml.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\UserDashboardWindow.axaml.cs",
               "RelativeDocumentMoniker": "Elbrus\\UserDashboardWindow.axaml.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\KursovayaElbrus\\Elbrus\\UserDashboardWindow.axaml.cs",
               "RelativeToolTip": "Elbrus\\UserDashboardWindow.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T10:37:02.775Z"
+              "WhenOpened": "2025-06-10T10:37:02.775Z",
+              "EditorCaption": ""
             }
           ]
         }

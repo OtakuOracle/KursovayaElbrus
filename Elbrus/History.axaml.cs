@@ -1,92 +1,123 @@
-﻿// HistoryWindow.xaml.cs
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Globalization;
 using System.Linq;
 using Avalonia.Controls;
+using Avalonia.Data.Converters;
+using Avalonia.Media;
+using Avalonia.Interactivity;
 using Elbrus.Models;
 
-namespace Elbrus
+namespace Elbrus;
+
+public partial class History : Window
 {
-    public partial class History : Window
+    private ObservableCollection<Employee> employees = new();
+    public List<Employee> AllEmployees = new();
+
+    public int SuccessfulLoginsCount => employees.Count(e => IsSuccessStatus(e.EnterStatus));
+    public int FailedLoginsCount => employees.Count(e => IsFailStatus(e.EnterStatus));
+
+    public History()
     {
-        private readonly List<LoginRecord> _all = new();
-        private readonly ObservableCollection<LoginRecord> _view = new();
+        InitializeComponent();
+        LoadData();
+        DataContext = this;
 
-        public History()
-        {
-            InitializeComponent();
-            HistoryList.ItemsSource = _view;
 
-            LoadData();
+        LoginComboBox.SelectionChanged += ComboBox_SelectionChanged;
+        SortComboBox.SelectionChanged += ComboBox_SelectionChanged;
+        StatusComboBox.SelectionChanged += ComboBox_SelectionChanged;
+        ResetButton.Click += ResetButton_Click;
+    }
 
-            UserFilter.SelectionChanged += (_, __) => ApplyFilters();
-            SortFilter.SelectionChanged += (_, __) => ApplyFilters();
-            StatusFilter.SelectionChanged += (_, __) => ApplyFilters();
-            ResetBtn.Click += (_, __) =>
+    private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        ApplyFilters();
+    }
+
+    private bool IsSuccessStatus(string? status)
+    {
+        return status != null && status.Contains("Успешно");
+    }
+
+    private bool IsFailStatus(string? status)
+    {
+        return status != null && status.Contains("Неуспешно");
+    }
+
+    private void LoadData()
+    {
+        using var context = new ElbrusRegionContext();
+        AllEmployees = context.Employees
+            .OrderByDescending(e => e.LastEnter)
+            .Select(e => new Employee
             {
-                UserFilter.SelectedIndex = 0;
-                SortFilter.SelectedIndex = 0;
-                StatusFilter.SelectedIndex = 0;
-                ApplyFilters();
-            };
+                Id = e.Id,
+                Login = e.Login,
+                LastEnter = e.LastEnter,
+                EnterStatus = e.EnterStatus ?? "Неизвестно"
+            }).ToList();
+
+        employees = new ObservableCollection<Employee>(AllEmployees);
+        LastEnterBox.ItemsSource = employees;
+
+        LoginComboBox.ItemsSource = new List<string> { "Все пользователи" }
+            .Concat(AllEmployees.Select(e => e.Login).Distinct().OrderBy(l => l));
+        LoginComboBox.SelectedIndex = 0;
+    }
+
+    private void ApplyFilters()
+    {
+        var filtered = AllEmployees.AsEnumerable();
+
+        if (LoginComboBox.SelectedItem is string selectedLogin && selectedLogin != "Все пользователи")
+        {
+            filtered = filtered.Where(e => e.Login == selectedLogin);
         }
 
-        private void LoadData()
+        if (StatusComboBox.SelectedIndex == 1)
         {
-            using var db = new ElbrusRegionContext();
-            var list = db.Employees
-                         .AsEnumerable()
-                         .OrderByDescending(e => e.LastEnter)
-                         .Select(e => new LoginRecord
-                         {
-                             Login = e.Login,
-                             LastEnter = e.LastEnter,
-                             EnterStatus = e.EnterStatus ?? "Неизвестно"
-                         })
-                         .ToList();
-
-            _all.AddRange(list);
-            foreach (var r in _all) _view.Add(r);
-
-            // Заполняем фильтр по пользователям
-            var users = _all.Select(r => r.Login)
-                            .Distinct()
-                            .OrderBy(n => n)
-                            .ToList();
-            UserFilter.ItemsSource = new List<string> { "Все" }.Concat(users);
-            UserFilter.SelectedIndex = 0;
-
-            SortFilter.SelectedIndex = 0;
-            StatusFilter.SelectedIndex = 0;
+            filtered = filtered.Where(e => IsSuccessStatus(e.EnterStatus));
+        }
+        else if (StatusComboBox.SelectedIndex == 2)
+        {
+            filtered = filtered.Where(e => IsFailStatus(e.EnterStatus));
         }
 
-        private void ApplyFilters()
+        filtered = SortComboBox.SelectedIndex == 0
+            ? filtered.OrderByDescending(e => e.LastEnter)
+            : filtered.OrderBy(e => e.LastEnter);
+
+        employees.Clear();
+        foreach (var emp in filtered)
         {
-            var q = _all.AsEnumerable();
-
-            if (UserFilter.SelectedItem is string u && u != "Все")
-                q = q.Where(r => r.Login == u);
-
-            if (StatusFilter.SelectedIndex == 1)
-                q = q.Where(r => r.EnterStatus.Contains("Успешно"));
-            else if (StatusFilter.SelectedIndex == 2)
-                q = q.Where(r => r.EnterStatus.Contains("Неуспешно"));
-
-            q = SortFilter.SelectedIndex == 0
-                ? q.OrderByDescending(r => r.LastEnter)
-                : q.OrderBy(r => r.LastEnter);
-
-            _view.Clear();
-            foreach (var r in q) _view.Add(r);
+            employees.Add(emp);
         }
     }
 
-    // LoginRecord.LastEnter теперь nullable
-    public class LoginRecord
+    private void ResetButton_Click(object? sender, RoutedEventArgs e)
     {
-        public string Login { get; set; }
-        public DateTime? LastEnter { get; set; }
-        public string EnterStatus { get; set; }
+        LoginComboBox.SelectedIndex = 0;
+        SortComboBox.SelectedIndex = 0;
+        StatusComboBox.SelectedIndex = 0;
+        ApplyFilters();
+    }
+}
+
+public class StatusToColorConverter : IValueConverter
+{
+    public static StatusToColorConverter Instance { get; } = new StatusToColorConverter();
+
+    public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
+    {
+        if (value is not string status) return Brushes.Black;
+        return status.Contains("Успешно") ? Brushes.Green : Brushes.Red;
+    }
+
+    public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
     }
 }
